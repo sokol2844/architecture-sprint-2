@@ -1,9 +1,5 @@
 # pymongo-api
 
-
-Итоговую архитектурную схему можно посмотреть в файле shema.drawio
-
-
 ## Как запустить
 
 Запускаем mongodb и приложение
@@ -17,4 +13,3 @@ docker compose up -d
 ```shell
 ./scripts/mongo-init.sh
 ```
-
