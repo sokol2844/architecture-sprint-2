@@ -207,7 +207,7 @@ services:
       - redis_data:/data
     networks:
       app-network:
-        ipv4_address: 173.17.0.2
+        ipv4_address: 173.17.0.11
 
   pymongo_api:
     container_name: pymongo_api
@@ -219,6 +219,9 @@ services:
       - mongos_router
     ports:
       - 8080:8080
+    networks:
+      app-network:
+        ipv4_address: 173.17.0.2
     environment:
       MONGODB_URL: "mongodb://mongos_router:27024"
       MONGODB_DATABASE_NAME: "somedb"
